@@ -1,0 +1,103 @@
+*{
+  background-color: rgb(41, 38, 38);
+}
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+
+
+
+
+h1{
+  font-size: 45px;
+    text-align: center;
+}
+h3{
+  color: aliceblue;
+
+}
+span{
+  color: red;
+}
+em{
+  color: blue;
+}
+.color{
+  transition: color 1000ms;
+}
+
+table{
+  background-color: lightgrey;
+  margin-left: auto;
+  margin-right: auto;
+  border: 15px solid green;
+  padding: 10px;
+
+}
+#board td {
+    width: 70px;
+    height: 60px;
+    border: solid 2px #666;
+    background-color: rgb(197, 233, 197);
+    
+  }
+
+ 
+ .piece.p1
+  {
+    margin: 5px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+    background-color: red;
+    animation-name: fall-animation;
+    animation-duration: 500ms;
+  }
+
+  @keyframes fall-animation {
+    from {
+        transform: translateY(-500px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+  .piece.p2
+  { 
+    margin: 5px;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background-color:blue;
+    animation-name: fall-animation;
+    animation-duration: 500ms;
+  }
+
+  #column-top td
+  {
+    background-color: rgb(103, 228, 130);
+    border: dashed 2px rgb(20, 20, 20);
+    border-style: outset;
+  }
+
+  #column-top td:hover {
+    background-color: rgb(238, 169, 40);
+  }
+
+/*
+
+  .piece{
+     make into circles 
+   
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+
+    margin: 5px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  
+  }
+  */
